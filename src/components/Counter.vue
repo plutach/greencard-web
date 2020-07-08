@@ -5,14 +5,11 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Counter extends Vue {
-  @Prop() private msg: string = "Hey";
-
-  onClick(): void {
-    window.alert(this.msg);
-  }
+  @Prop() private msg!: string;
 }
+
 </script>
