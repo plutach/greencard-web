@@ -1,15 +1,14 @@
 <template>
-  <div id="count">
-    <h1>{{msg}}</h1>
-    <button @click="onClick()">Click!</button>
+  <div class="Count">
+    <h1>{{ ms }}</h1>
+    <input v-model="message" placeholder="Where do you want to go?" />
   </div>
 </template>
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class Counter extends Vue {
-  @Prop() private msg!: string;
+  @Prop() private ms!: string;
 }
-
 </script>
