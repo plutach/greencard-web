@@ -1,14 +1,14 @@
 <template>
   <div class="about">
     <h1>Find your greens here</h1>
-    <Map map="this is a map" />
+    <Map map="Please select your favorite place to be" />
   </div>
 </template>
 <script>
-import Map from "@/components/Map.vue";
+import Map from '@/components/Map.vue';
 
 export default {
-  name: "About",
+  name: 'About',
   components: {
     Map
   }
