@@ -15,7 +15,7 @@ import Map from "@/components/Map.vue";
 export default {
   name: "About",
   components: {
-    Map
-  }
+    Map,
+  },
 };
 </script>
