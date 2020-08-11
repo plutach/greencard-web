@@ -1,4 +1,3 @@
-
 <template>
   <div class="places">
     <v-col class="d-flex" cols="12" sm="6">
@@ -7,10 +6,10 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Places extends Vue {
-  @Prop() private items: string[] = ["Foo", "Bar", "Fizz", "Buzz"];
+  @Prop() private items: string[] = ['Foo', 'Bar', 'Fizz', 'Buzz'];
 }
 </script>
