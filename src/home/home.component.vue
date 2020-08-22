@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <img alt="leaf logo" src="../assets/leaf_.png" />
     <h1>{{ msg }}</h1>
     <p>
       Select your favourite green spcace to be.

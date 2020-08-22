@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <Map map="Find your greens here" />
+  <div class="map">
+    <h2>"Find your greens here"</h2>
     <select v-model="selected">
       <option disabled value>Please select one</option>
       <option>Community Gardens</option>
@@ -9,13 +9,3 @@
     </select>
   </div>
 </template>
-<script>
-import Map from "@/components/Map.vue";
-
-export default {
-  name: "About",
-  components: {
-    Map,
-  },
-};
-</script>
