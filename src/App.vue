@@ -1,9 +1,10 @@
 <template>
-  <div id="header">
+  <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link>|
       <router-link to="/map">Map</router-link>
     </div>
+    <router-view />
   </div>
 </template>
 
@@ -20,7 +21,6 @@
   padding: 30px;
 
   a {
-    font-size: 25px;
     font-weight: bold;
     color: #2c3e50;
 
