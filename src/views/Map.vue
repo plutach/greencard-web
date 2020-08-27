@@ -1,19 +1,21 @@
 <template>
   <div class="map">
     <h2>Find your Greens to mingle with..</h2>
-    <select v-model="placeVal" calss="options">
-      <option
-        v-for="place in places"
-        :value="place"
-        :key="place"
-        placeholder="Where to go?"
-      >{{place.title}}</option>
-    </select>
+    <!-- <select v-model="placeVal" placeholder="Where to go?">
+      <option v-for="place in places" :value="place" :key="place">{{place.title }}</option>
+    </select>-->
+
+    <v-select class="style-chooser" placeholder="Where to go?" :options="places.title" />
   </div>
 </template>
 
+
 <script lang="ts">
 import Vue from "vue";
+import vSelect from "vue-select";
+import "vue-select/dist/vue-select.css";
+
+Vue.component("v-select", vSelect);
 export default Vue.extend({
   data() {
     return {
@@ -38,15 +40,18 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-select,
-option {
-  width: 250px;
-  height: 25px;
+.style-chooser .vs__search::placeholder,
+.style-chooser .vs__dropdown-toggle,
+.style-chooser .vs__dropdown-menu {
+  background: #dfe5fb;
+  border: none;
+  color: #394066;
+  text-transform: lowercase;
+  font-variant: small-caps;
 }
 
-option {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.style-chooser .vs__clear,
+.style-chooser .vs__open-indicator {
+  fill: #394066;
 }
 </style>
