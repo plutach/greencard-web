@@ -10,6 +10,9 @@
         :options="places"
       />
     </div>
+    <kakaoMap />
+
+    <Footer />
   </div>
 </template>
 
@@ -18,9 +21,15 @@
 import Vue from "vue";
 import vSelect from "vue-select";
 import "vue-select/dist/vue-select.css";
+import Footer from "@/components/footer.vue";
+import kakaoMap from "@/components/kakaoMap.vue";
 
 Vue.component("v-select", vSelect);
-export default Vue.extend({
+export default {
+  components: {
+    Footer,
+    kakaoMap,
+  },
   data() {
     return {
       places: [
@@ -33,7 +42,8 @@ export default Vue.extend({
       placeVal: null,
     };
   },
-});
+  methods: {},
+};
 </script>
 
 <style scoped lang="scss">

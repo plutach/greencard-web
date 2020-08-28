@@ -1,5 +1,5 @@
 {
-  "name": "green-card-web",
+  "name": "greencard",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,9 @@
     "@types/vue-select": "^2.5.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
+    "vue-browser-geolocation": "^1.8.0",
     "vue-class-component": "^7.2.3",
+    "vue-daum-map": "^1.0.15",
     "vue-property-decorator": "^8.4.2",
     "vue-router": "^3.2.0",
     "vue-select": "^3.10.8",
