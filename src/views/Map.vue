@@ -1,11 +1,15 @@
 <template>
   <div class="map">
     <h2>Find your Greens to mingle with..</h2>
-    <!-- <select v-model="placeVal" placeholder="Where to go?">
-      <option v-for="place in places" :value="place" :key="place">{{place.title }}</option>
-    </select>-->
-
-    <v-select class="style-chooser" placeholder="Where to go?" :options="places.title" />
+    <!-- TODO add a multi select menu  -->
+    <div id="sel">
+      <v-select
+        v-model="placeVal"
+        class="style-chooser"
+        placeholder="Where to go?"
+        :options="places"
+      />
+    </div>
   </div>
 </template>
 
@@ -20,18 +24,11 @@ export default Vue.extend({
   data() {
     return {
       places: [
-        {
-          title: "Community Garden",
-        },
-        {
-          title: "Hiking Trails",
-        },
-        {
-          title: "Camping Grounds",
-        },
-        {
-          title: "Parks",
-        },
+        "Commuity Gardens",
+        "Hiking Trails",
+        "Camping Grounds",
+        "Parks",
+        "Forests",
       ],
       placeVal: null,
     };
@@ -39,19 +36,26 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+#sel {
+  max-width: 30em;
+  margin: 1em auto;
+}
+
+$vs-state-active-bg: #42b983;
+
 .style-chooser .vs__search::placeholder,
 .style-chooser .vs__dropdown-toggle,
 .style-chooser .vs__dropdown-menu {
   background: #dfe5fb;
   border: none;
-  color: #394066;
+  color: $vs-state-active-bg;
   text-transform: lowercase;
   font-variant: small-caps;
 }
 
 .style-chooser .vs__clear,
 .style-chooser .vs__open-indicator {
-  fill: #394066;
+  fill: #989b9a;
 }
 </style>
