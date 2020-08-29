@@ -8,7 +8,7 @@ For the people with a big green thumb, or like to get in to nature.
 ```
 ## Build Status
 ```
-[![Actions Status](https://github.com/plutach/greencard-web/workflows/CI/badge.svg)](https://github.com/plutach/greencard-web/actions="test")
+[![Actions Status](https://xxx.execute-api.us-west-2.amazonaws.com/production/badge/plutach/greencard-web)](https://xxx.execute-api.us-west-2.amazonaws.com/production/results/plutach/greencard-web)
 ```
 
 ## Tech/framework
