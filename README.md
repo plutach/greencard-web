@@ -1,4 +1,21 @@
-# Green Card 
+## Green Card 
+```
+Find hiking trails, camping grounds, community gardens and parks. 
+```
+## Motivation
+```
+For the people with a big green thumb, or like to get in to nature. 
+```
+## Build Status
+```
+[![Actions Status](https://github.com/{owner}/{repo}/workflows/{workflow_name}/badge.svg)](https://github.com/{owner}/{repo}/actions)
+```
+
+## Tech/framework
+```
+Build With 
+- Google Maps Api 
+```
 
 ## Project setup
 ```
