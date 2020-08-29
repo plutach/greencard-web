@@ -8,7 +8,6 @@ For the people with a big green thumb, or like to get in to nature.
 ```
 ## Build Status
 ```
-[![Travis CI](https://travis-ci.org/tterb/yt2mp3.svg?branch=master)](https://travis-ci.org/tterb/yt2mp3)
 
 ```
 
