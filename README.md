@@ -1,16 +1,19 @@
 ### Green Card 
-
+----
 Find hiking trails, camping grounds, community gardens and parks. 
 
 ### Motivation
-
+----
 For the people with a big green thumb, or like to get in to nature. 
 
 
 ### Tech/framework
+----
+Build With   
+- Google Maps Api
+- Vue CLI
+- Typescript 
 
-Build With :  Google Maps Api, Vuejs, Typescript 
-```
 
 ### Project setup
 ```
