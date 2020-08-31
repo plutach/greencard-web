@@ -1,7 +1,6 @@
 ### Green Card 
-```
 Find hiking trails, camping grounds, community gardens and parks. 
-```
+
 ### Motivation
 ```
 For the people with a big green thumb, or like to get in to nature. 
