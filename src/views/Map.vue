@@ -10,7 +10,7 @@
         :options="places"
       />
     </div>
-    <GoogleMap />
+    <kakaoMap />
 
     <Footer />
   </div>
@@ -22,13 +22,13 @@ import Vue from "vue";
 import vSelect from "vue-select";
 import "vue-select/dist/vue-select.css";
 import Footer from "@/components/footer.vue";
-import GoogleMap from "@/components/GoogleMap.vue";
+import kakaoMap from "@/components/kakaoMap.vue";
 
 Vue.component("v-select", vSelect);
 export default {
   components: {
     Footer,
-    GoogleMap,
+    kakaoMap,
   },
   data() {
     return {
